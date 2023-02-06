@@ -12,13 +12,16 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    text-decoration: none;
 }
+
 
 body {
     width: 100vw;
     font-family: "OpenSans-Bold";
     display: flex;
     flex-wrap: wrap;
+    outline: none;
 }
 /* Стили для header */
 .header {
@@ -66,11 +69,11 @@ body {
     text-decoration: none;
 }
 
-a {
+ a {
     color: white;
     outline: none;
     text-decoration: none;
-}
+} 
 
 .title {
     width: 40%;
@@ -88,31 +91,64 @@ a {
 /* Стили для main */
 .main {
     max-width: 61.56%;
-    height: 2550px;
-    margin: 50px 0px 0px 0px ;
+    /* margin: 50px 0px 0px 0px ; */
     padding: 0px;
     box-sizing: border-box;
 }
 
 .card {
     margin-left: 10%;
-    margin-left: 245px;
+    margin-left: 14.75%;
+    margin-top: 50px;
     font-size: 20px;
     display: flex;
+ 
+}
+.img {
+    min-width: 50%;
+    max-width: 50%;
+}
+.card:nth-child(n+2) {
+    margin-top: 55px;
 }
 .text_contaner {
+    padding-left: 10px;
     min-width: 50%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
 }
 .tg {
-    padding-left: 10px;
+    font-size: 14px;
+    min-width: 25%;
+    color: #b59f5b;
+    text-transform: uppercase;
+}
+.tg:nth-of-type(even) {
+    margin-left: 10px;
+}
+.topic {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.meta {
+    font-size: 12px;
+    font-style: bold;
+    color: black;
+
+}
+
+.meta:nth-of-type(even) {
+    margin-right: 10px;
+    color: gray;
+    font-style: normal;
+}
+
+.article {
+    font-size: 15px;
 }
 
 /* Стили для main */
 .aside {
     flex-basis: calc(100% - 61.56%);
-    height: 2550px;
     background-color: red;
 }
